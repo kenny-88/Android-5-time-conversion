@@ -1,4 +1,4 @@
-package com.example.android_num5_timeexchange;
+package com.example.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -41,7 +41,8 @@ public class MainActivity extends AppCompatActivity {
             tv10.setText(time.format(years) + "/" + time.format(mouths) + "/" + time.format(days));
             TextView tv11 = (TextView)findViewById(R.id.tv11);
             tv11.setText(time.format(hours) + ":" + time.format(minutes) + ":" + time.format(secords));
-            TextView tv9 = (TextView)findViewById(R.id.tv9);
+            TextView tv12 = (TextView)findViewById(R.id.tv12);
+
             if (years % 4 == 0)
                 tv12.setText("是");
             else if (years % 100 == 0)
